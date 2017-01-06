@@ -1,0 +1,32 @@
+<classpath>
+  <classpathentry kind="src" path="src/main/app" excluding="**/*.java"/>
+  <classpathentry kind="src" path="src/main/java"/>
+  <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes"/>
+  <classpathentry kind="src" path="src/test/resources" output="target/test-classes" excluding="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="MULE_RUNTIME"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/org/bouncycastle/bcprov-jdk15on/1.55/bcprov-jdk15on-1.55.jar" sourcepath="M2_REPO/org/bouncycastle/bcprov-jdk15on/1.55/bcprov-jdk15on-1.55-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/Hernani/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.55/bcprov-jdk15on-1.55-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/Hernani/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/Hernani/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/Hernani/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/auth0/java-jwt/3.1.0/java-jwt-3.1.0.jar" sourcepath="M2_REPO/com/auth0/java-jwt/3.1.0/java-jwt-3.1.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/io/jsonwebtoken/jjwt/0.7.0/jjwt-0.7.0.jar" sourcepath="M2_REPO/io/jsonwebtoken/jjwt/0.7.0/jjwt-0.7.0-sources.jar"/>
+</classpath>
