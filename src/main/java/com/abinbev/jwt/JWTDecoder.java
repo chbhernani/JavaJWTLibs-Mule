@@ -32,7 +32,7 @@ import com.auth0.jwt.interfaces.Claim;
  * 
  * @author Hernani
  */
-public class JWTDecoder extends DecoderImpl {
+public class JWTDecoder extends JWTCallable {
 
 	@Override
 	public Map<String, String> onCall(MuleEventContext eventContext) throws Exception {

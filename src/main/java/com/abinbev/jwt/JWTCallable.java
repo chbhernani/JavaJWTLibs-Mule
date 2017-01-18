@@ -4,7 +4,7 @@ import org.apache.log4j.Logger;
 import org.mule.api.MuleEventContext;
 import org.mule.api.lifecycle.Callable;
 
-public class DecoderImpl implements Callable {
+public class JWTCallable implements Callable {
 
 	protected static Logger logger = Logger.getLogger(JWTDecoder.class);
 	protected String token;

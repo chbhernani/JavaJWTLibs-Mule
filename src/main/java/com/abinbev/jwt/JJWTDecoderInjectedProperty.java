@@ -26,7 +26,7 @@ import io.jsonwebtoken.impl.TextCodec;
  * 
  * @author Hernani
  */
-public class JJWTDecoderInjectedProperty extends DecoderImpl {
+public class JJWTDecoderInjectedProperty extends JWTCallable {
 
 	private String uncodedKey;
 

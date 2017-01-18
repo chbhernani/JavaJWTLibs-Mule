@@ -24,7 +24,7 @@ import io.jsonwebtoken.impl.TextCodec;
  * 
  * @author Hernani
  */
-public class JJWTDecoder extends DecoderImpl {
+public class JJWTDecoder extends JWTCallable {
 
 	@Override
 	public Claims onCall(MuleEventContext eventContext) throws Exception {
