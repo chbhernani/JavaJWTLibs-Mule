@@ -1,5 +1,7 @@
 package com.abinbev.jwt;
 
+import java.util.Map;
+
 import org.mule.api.MuleEventContext;
 
 import io.jsonwebtoken.Claims;
@@ -24,28 +26,24 @@ import io.jsonwebtoken.impl.TextCodec;
  * 
  * @author Hernani
  */
-public class JJWTDecoder extends DecoderImpl {
+public class JJWTDecoderInjectedProperty extends DecoderImpl {
+
+	private String uncodedKey;
 
 	@Override
 	public Claims onCall(MuleEventContext eventContext) throws Exception {
-		
-		// set token value
+
 		super.onCall(eventContext);
-		
-		String uncodedKey = eventContext.getMessage().getInvocationProperty("uncodedKey");
-		String signedKey = TextCodec.BASE64.encode(uncodedKey);
-		
-		logger.info("token: " + token);
-		logger.info("uncodedKey: " + uncodedKey);
-		logger.info("signedKey: " + signedKey);
 
 		Claims body = null;
 		try {
-			
+			// TextCodec.BASE64.encode("secret");
+			// DatatypeConverter.parseBase64Binary("secret")
+
+			String signedKey = TextCodec.BASE64.encode(uncodedKey);
 			body = Jwts.parser().setSigningKey(signedKey).parseClaimsJws(token).getBody();
 
 			logger.info("Claims converted successfully");
-			logger.info("body: \n" + body);
 			
 		} catch (Exception e) {
 			logger.error(e);
@@ -53,5 +51,8 @@ public class JJWTDecoder extends DecoderImpl {
 
 		return body;
 	}
-}
 
+	public void setUncodedKey(String uncodedKey) {
+		this.uncodedKey = uncodedKey;
+	}
+}
